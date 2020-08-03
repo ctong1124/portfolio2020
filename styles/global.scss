@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+}
+
+.top {
+  font-family: 'Space Mono', monospace;
+  mix-blend-mode: difference;
+  color: white;
+
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    font-size: 16px;
+    z-index: 3;
+
+    a {
+      color: white;
+    }
+  }
+
+  .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    font-size: 16px;
+    z-index: 3;
+    cursor: pointer;
+    width: 60px;
+    text-align: center;
+  }
+
+  .button:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.contentContainer {
+  mix-blend-mode: difference;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  padding: 20px;
+
+  h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 48px 24px 0 24px;
+
+    @media (min-width: 480px) {
+      font-size: 60px;
+    }
+
+    @media (min-width: 840px) {
+      font-size: 100px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 150px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+
+    @media (min-width: 840px) {
+      font-size: 26px;
+    }
+
+    a {
+      color: white;
+
+    }
+  }
+}
