@@ -32,10 +32,8 @@ export default function Home() {
     }
   }
 
-
   const { x, y } = useMousePosition();
 
-  // console.log(`x: ${x}, y: ${y}`);
   const degree = ((x + y)/8) % 360;
   const color1 = '#eaee44';
   const color2 = '#33d0ff';
@@ -48,6 +46,7 @@ export default function Home() {
       </Head>
 
       <video autoPlay muted loop ref={videoRef} className="backgroundVideo">
+        <source src="/vid-small.mp4" type="video/mp4" media="all and (max-width: 600px)" /> 
         <source src="/vid.mp4" type="video/mp4" />
       </video>
       <div className="overlay" style={{"backgroundImage": `linear-gradient(${degree}deg, ${color1}, ${color2})`}}/>
@@ -55,10 +54,13 @@ export default function Home() {
       <div className="contentContainer">
         <div className="content">
           <h1 className="title">
-            WORK IN PROGRESS
+            CARISA <br/> TONG
           </h1>
           <h2 className="description">
-            Let&#39;s connect on <a href="https://www.linkedin.com/in/carisatong" target="blank">LinkedIn</a>
+            is a Designer turned Developer.
+          </h2>
+          <h2 className="description">
+            Let&#39;s connect on <a href="https://www.linkedin.com/in/carisatong" target="blank">LinkedIn</a> or <a href="https://github.com/ctong1124" target="blank">Github.</a>
           </h2>
         </div>
       </div>
