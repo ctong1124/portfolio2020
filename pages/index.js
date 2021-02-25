@@ -46,7 +46,7 @@ export default function Home() {
       </Head>
 
       <video autoPlay muted loop ref={videoRef} className="backgroundVideo">
-        <source src="/vid-small.mp4" type="video/mp4" media="all and (max-width: 600px)" /> 
+        <source src="/vid-small.mp4" type="video/mp4" media="all and (max-width: 600px)" />
         <source src="/vid.mp4" type="video/mp4" />
       </video>
       <div className="overlay" style={{"backgroundImage": `linear-gradient(${degree}deg, ${color1}, ${color2})`}}/>
@@ -57,7 +57,7 @@ export default function Home() {
             CARISA <br/> TONG
           </h1>
           <h2 className="description">
-            is a Designer turned Developer.
+            is a Designer turned Developer with experience building on large-scale web applications.
           </h2>
           <h2 className="description">
             Let&#39;s connect on <a href="https://www.linkedin.com/in/carisatong" target="blank">LinkedIn</a> or <a href="https://github.com/ctong1124" target="blank">Github.</a>
